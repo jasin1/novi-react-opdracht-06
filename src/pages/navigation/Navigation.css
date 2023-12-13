@@ -1,0 +1,41 @@
+
+/*:root {*/
+/*    --color-primary: #38E991;*/
+/*    --color-secondary: #2C2F39;*/
+/*    --color-tertiary: #50535C;*/
+/*    --color-white: #FFFFFF;*/
+/*}*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: var(--color-secondary);
+    color: var(--color-white);
+    padding: 1rem;
+
+}
+
+.logo-wrapper{
+    width: 160px;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--color-white);
+    margin: 0 .3rem;
+    padding: 0.5rem 1rem;
+    /*font-weight: bold;*/
+    font-size: .9rem;
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}
