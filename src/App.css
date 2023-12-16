@@ -11,6 +11,28 @@
     align-items: center;
 }
 
-.page-container img {
-    width: 500px;
+main{
+
+}
+
+.page-wrapper{
+    padding: 4rem;
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    max-width: 1200px;
+    /*background: red;*/
+}
+
+.grey-bg{
+    background: var(--color-grey);
+}
+
+.inline-link{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: bold;
 }

@@ -8,6 +8,7 @@ import NotFound from './pages/notFound/NotFound.jsx';
 import Navigation from "./pages/navigation/Navigation.jsx";
 import BlogPage from "./pages/blogpage/BlogPage.jsx";
 
+
 function App() {
     return (
         <>

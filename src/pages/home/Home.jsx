@@ -1,11 +1,12 @@
-
 import './Home.css';
 
 
-function Home(){
+function Home() {
     return (
-        <main>
-            <h1>Hooooome</h1>
+        <main className="page-container">
+            <article>
+                <h1>Home</h1>
+            </article>
         </main>
     );
 }
