@@ -11,12 +11,10 @@
     align-items: center;
 }
 
-main{
 
-}
 
 .page-wrapper{
-    padding: 4rem;
+    padding: 2rem 4rem;
     color: var(--color-secondary);
     display: flex;
     justify-content: center;
@@ -36,3 +34,4 @@ article{
     color: var(--color-primary);
     font-weight: bold;
 }
+

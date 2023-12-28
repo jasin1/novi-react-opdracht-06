@@ -16,8 +16,8 @@ function PostMaken() {
 
 
     return (
-        <main className="page-wrapper">
-            <article>
+        <main className="page-wrapper grey-bg">
+            <article className="main-container">
                 <h1>Post toevoegen</h1>
                 <div className="form-wrapper">
                     <form onSubmit={handleSubmit((data) => {
@@ -36,7 +36,7 @@ function PostMaken() {
                                 />
                             </label>
                             <label htmlFor="subtitle-field">
-                                SubTitel
+                                Sub-titel
                                 <input
                                     type="text"
                                     id="subtitle-field"
