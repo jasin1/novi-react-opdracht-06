@@ -1,21 +1,45 @@
 import {useParams} from "react-router-dom";
-import Data from '../../constants/data.json';
+// import Data from '../../constants/data.json';
 import {Link} from "react-router-dom";
 import showDate from "../../helpers/showDate.js";
 import './BlogPage.css';
+import {useEffect, useState} from "react";
+import axios from "axios";
 
 function BlogPage() {
     const {id} = useParams();
-    const num = id - 1;
-    // console.log(Data[num]);
+    const [blogData, setBlogData] = useState();
+    const [error, setError] = useState();
+   //  const num = id - 1;
+   //  // console.log(Data[num]);
+   //
+   //  const blogData = Data[num];
+   // console.log(blogData);
 
-    const blogData = Data[num];
-    console.log(blogData);
+    useEffect(()=>{
+        async function fetchData() {
+            // {setError}('');
+            try {
+                const response = await axios.get(`http://localhost:3000/posts/${id}`);
+                console.log(response.data);
+                setBlogData(response.data);
+            } catch (e) {
+                console.error(e);
+                setError('Het ophalen van de data is mislukt!')
+            }
+        }
+
+
+        fetchData();
+
+    },[]);
 
     return (
         <main className="page-wrapper">
+            {blogData ? (
             <article className="myPost">
                 <header>
+                    {error && <p className="error">{error}</p>}
                     <h1>{blogData.title}</h1>
                     <h2>{blogData.subtitle}</h2>
                 </header>
@@ -42,6 +66,7 @@ function BlogPage() {
                     </div>
                 </section>
             </article>
+            ):(<p>Momentje...</p>)}
         </main>
     )
 

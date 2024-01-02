@@ -1,5 +1,6 @@
 import './App.css'
 // import logo from './assets/logo-white.png'
+// import {useEffect, useState} from 'react';
 import {Routes, Route} from 'react-router-dom';
 import Home from './pages/home/Home.jsx';
 import Posts from './pages/posts/Posts.jsx';
@@ -10,6 +11,8 @@ import BlogPage from "./pages/blogpage/BlogPage.jsx";
 
 
 function App() {
+
+
     return (
         <>
             <Navigation/>
