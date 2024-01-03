@@ -5,6 +5,7 @@ import showDate from "../../helpers/showDate.js";
 import './BlogPage.css';
 import {useEffect, useState} from "react";
 import axios from "axios";
+import timeIcon from '../../assets/time.svg';
 
 function BlogPage() {
     const {id} = useParams();
@@ -46,7 +47,7 @@ function BlogPage() {
                 <div className="blog-details">
                     <p>Geschreven door <span className="highlight">{blogData.author}</span> op <span className="highlight">{showDate(blogData.created)}</span></p>
                     <div className="small-txt">
-                        <img src="" alt=""/>
+                        <div className="icon-wrapper"><img src={timeIcon} alt=""/></div>
                         <span>{blogData.readTime} minuten lezen</span>
                     </div>
                 </div>

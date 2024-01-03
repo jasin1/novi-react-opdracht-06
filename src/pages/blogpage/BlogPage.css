@@ -8,11 +8,14 @@
 }
 
 .blog-details{
-
+    margin-bottom: 1.5rem;
 }
 
 .small-txt{
     font-size: .9rem;
+    display: flex;
+    gap: .4rem;
+
 }
 
 .blog-body{
@@ -22,6 +25,7 @@
 
 .blog-txt{
     margin-bottom: 2.5rem;
+
 
 }
 
@@ -36,4 +40,8 @@
 .highlight{
     color: var(--color-secondary);
     font-weight: bold;
+}
+
+.icon-wrapper{
+    width: .8rem;
 }
