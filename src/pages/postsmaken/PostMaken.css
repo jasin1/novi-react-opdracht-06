@@ -31,3 +31,15 @@ input, textarea{
     background: var(--color-white);
 
 }
+
+.visible{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+.error{
+    color: red;
+}

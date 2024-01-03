@@ -44,8 +44,8 @@ function BlogPage() {
                     <h2>{blogData.subtitle}</h2>
                 </header>
                 <div className="blog-details">
-                    <p>Geschreven door {blogData.author} op {showDate(blogData.created)}</p>
-                    <div className="blog-read-duration">
+                    <p>Geschreven door <span className="highlight">{blogData.author}</span> op <span className="highlight">{showDate(blogData.created)}</span></p>
+                    <div className="small-txt">
                         <img src="" alt=""/>
                         <span>{blogData.readTime} minuten lezen</span>
                     </div>
@@ -56,8 +56,8 @@ function BlogPage() {
                             {blogData.content}
                         </p>
                     </div>
-                    <div className="blog-txt">
-                        <p>{blogData.comments} reacties - {blogData.shares} keer gedeeld</p>
+                    <div className="small-txt">
+                        <p><span className="highlight"> {blogData.comments}</span> reacties - <span className="highlight">{blogData.shares}</span> keer gedeeld</p>
                     </div>
                     <div className="link-back">
                         <Link to="/posts" className="inline-link">

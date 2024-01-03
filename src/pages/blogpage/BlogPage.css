@@ -11,15 +11,17 @@
 
 }
 
-.blog-read-duration{
-
+.small-txt{
+    font-size: .9rem;
 }
 
 .blog-body{
-
+    font-size: 1.2rem;
+    color: var(--color-primary);
 }
 
 .blog-txt{
+    margin-bottom: 2.5rem;
 
 }
 
@@ -29,4 +31,9 @@
 
 .link-back{
 
+}
+
+.highlight{
+    color: var(--color-secondary);
+    font-weight: bold;
 }
